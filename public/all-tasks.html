@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Task Manager</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    <link rel="stylesheet" href="/css/main.css">
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Rajdhani|Roboto" rel="stylesheet">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">  </head>
+  <body>
+    <div id="all-tasks">
+<section class="header">
+  <div class="top">
+    <div class="logo">
+  Task Manager
+    </div>
+    <div class="tasks-total">
+    <div class="task"><span class="number">12</span>Tasks</div>
+    <div class="task"><span class="number">5</span>Completed</div>
+  </div>
+
+       <div class="add-circle">
+  <i class="fas fa-plus-circle"></i>
+       </div>
+       </div>
+   </section>
+
+<section class="content-area">
+  <div class="container">
+    <div class="tasks-container">
+      <div class="task-box" >
+      <div class="title">
+    Hit The Gym 9:00 PM
+      </div>
+      <div class="date">
+Created: April 25, 2017
+</div>
+  </div>
+  <div class="task-box" >
+  <div class="title">
+4 Hour Study - Economics + Programming
+  </div>
+  <div class="date">
+Created: April 25, 2017
+</div>
+<div class="check-box">
+  <i class="fas fa-check"></i>
+</div>
+</div>
+<div class="task-box" >
+<div class="title">
+Attend skype meeting with Dave at 3:00 PM
+</div>
+<div class="date">
+Created: April 25, 2017
+</div>
+<div class="check-box">
+<i class="fas fa-check"></i>
+</div>
+</div>
+<div class="task-box" >
+<div class="title">
+Make 10 - 15 Calls
+</div>
+<div class="date">
+Created: April 25, 2017
+</div>
+<div class="check-box">
+<i class="fas fa-check"></i>
+</div>
+</div>
+<div class="task-box" >
+<div class="title">
+2 Hour Project
+</div>
+<div class="date">
+Created: April 25, 2017
+</div>
+<div class="check-box">
+<i class="fas fa-check"></i>
+</div>
+</div>
+<div class="task-box" >
+<div class="title">
+Organize Files and Work
+</div>
+<div class="date">
+Created: April 25, 2017
+</div>
+<div class="check-box">
+<i class="fas fa-check"></i>
+</div>
+</div>
+<div class="task-box" >
+<div class="title">
+Wake up & Jogging at 4.30 am
+</div>
+<div class="date">
+Created: April 25, 2017
+</div>
+<div class="check-box">
+<i class="fas fa-check"></i>
+</div>
+</div>
+            </div>
+          </div>
+</section>
+
+<section class="task-form">
+  <div class="close-btn">
+<i class="fas fa-times"></i>
+  </div>
+  <form>
+          <h3> Add a task</h3>
+    <div class="form-group">
+  <label for="title">Name</label>
+      <input type="text" name="title">
+    </div>
+    <div class="form-group">
+      <label for="title"> Category</label>
+      <input type="text" name="title">
+    </div>
+    <div class="form-group">
+      <label for="title">Notes:</label>
+      <textarea name="notes"></textarea>
+    </div>
+    <div class="form-group">
+  <button type="submit">Add New Task</button>
+    </div>
+
+  </form>
+</section>
+</div>
+<script
+  src="https://code.jquery.com/jquery-1.12.4.min.js"
+  integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
+  crossorigin="anonymous"></script>
+<script>
+  $(document).ready(function(){
+    $('.add-circle').on('click', function(){
+      $('.task-form').addClass('active')
+      })
+      $('.task-form .close-btn').on('click', function(){
+        $('.task-form').removeClass('active')
+        })
+    })
+</script>
+  </body>
+</html>
